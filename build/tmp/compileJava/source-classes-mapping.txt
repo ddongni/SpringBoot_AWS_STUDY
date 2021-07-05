@@ -1,3 +1,5 @@
+study/springboot/web/dto/HelloResponseDto.java
+ study.springboot.web.dto.HelloResponseDto
 study/springboot/Application.java
  study.springboot.Application
 study/springboot/web/HelloController.java
