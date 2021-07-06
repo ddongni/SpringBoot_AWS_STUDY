@@ -4,3 +4,8 @@ study/springboot/Application.java
  study.springboot.Application
 study/springboot/web/HelloController.java
  study.springboot.web.HelloController
+study/springboot/domain/posts/PostsRepository.java
+ study.springboot.domain.posts.PostsRepository
+study/springboot/domain/posts/Posts.java
+ study.springboot.domain.posts.Posts
+ study.springboot.domain.posts.Posts$PostsBuilder
