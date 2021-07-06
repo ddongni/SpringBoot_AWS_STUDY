@@ -14,10 +14,12 @@ study/springboot/web/dto/PostsResponseDto.java
  study.springboot.web.dto.PostsResponseDto
 study/springboot/web/PostsApiController.java
  study.springboot.web.PostsApiController
+study/springboot/domain/BaseTimeEntity.java
+ study.springboot.domain.BaseTimeEntity
+study/springboot/Application.java
+ study.springboot.Application
 study/springboot/service/posts/PostsService.java
  study.springboot.service.posts.PostsService
 study/springboot/domain/posts/Posts.java
  study.springboot.domain.posts.Posts
  study.springboot.domain.posts.Posts$PostsBuilder
-study/springboot/Application.java
- study.springboot.Application
