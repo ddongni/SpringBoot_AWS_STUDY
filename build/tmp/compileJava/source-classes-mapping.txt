@@ -23,3 +23,5 @@ study/springboot/service/posts/PostsService.java
 study/springboot/domain/posts/Posts.java
  study.springboot.domain.posts.Posts
  study.springboot.domain.posts.Posts$PostsBuilder
+study/springboot/web/IndexController.java
+ study.springboot.web.IndexController
