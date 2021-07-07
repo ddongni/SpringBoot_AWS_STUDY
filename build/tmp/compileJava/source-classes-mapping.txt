@@ -21,9 +21,9 @@ study/springboot/web/dto/PostsListResponseDto.java
  study.springboot.web.dto.PostsListResponseDto
 study/springboot/domain/posts/PostsRepository.java
  study.springboot.domain.posts.PostsRepository
-study/springboot/service/posts/PostsService.java
- study.springboot.service.posts.PostsService
-study/springboot/web/PostsApiController.java
- study.springboot.web.PostsApiController
 study/springboot/web/IndexController.java
  study.springboot.web.IndexController
+study/springboot/web/PostsApiController.java
+ study.springboot.web.PostsApiController
+study/springboot/service/posts/PostsService.java
+ study.springboot.service.posts.PostsService
