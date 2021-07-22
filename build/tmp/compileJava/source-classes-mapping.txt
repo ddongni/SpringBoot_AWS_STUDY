@@ -1,29 +1,45 @@
-study/springboot/web/dto/HelloResponseDto.java
- study.springboot.web.dto.HelloResponseDto
-study/springboot/web/dto/PostsUpdateRequestDto.java
- study.springboot.web.dto.PostsUpdateRequestDto
- study.springboot.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
-study/springboot/web/HelloController.java
- study.springboot.web.HelloController
-study/springboot/domain/posts/Posts.java
- study.springboot.domain.posts.Posts
- study.springboot.domain.posts.Posts$PostsBuilder
+study/springboot/web/dto/PostsListResponseDto.java
+ study.springboot.web.dto.PostsListResponseDto
+study/springboot/domain/user/User.java
+ study.springboot.domain.user.User
+ study.springboot.domain.user.User$UserBuilder
 study/springboot/web/dto/PostsSaveRequestDto.java
  study.springboot.web.dto.PostsSaveRequestDto
  study.springboot.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
+study/springboot/config/auth/dto/SessionUser.java
+ study.springboot.config.auth.dto.SessionUser
 study/springboot/web/dto/PostsResponseDto.java
  study.springboot.web.dto.PostsResponseDto
-study/springboot/Application.java
- study.springboot.Application
+study/springboot/web/dto/PostsUpdateRequestDto.java
+ study.springboot.web.dto.PostsUpdateRequestDto
+ study.springboot.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
 study/springboot/domain/BaseTimeEntity.java
  study.springboot.domain.BaseTimeEntity
-study/springboot/web/dto/PostsListResponseDto.java
- study.springboot.web.dto.PostsListResponseDto
-study/springboot/domain/posts/PostsRepository.java
- study.springboot.domain.posts.PostsRepository
-study/springboot/web/IndexController.java
- study.springboot.web.IndexController
-study/springboot/web/PostsApiController.java
- study.springboot.web.PostsApiController
+study/springboot/Application.java
+ study.springboot.Application
 study/springboot/service/posts/PostsService.java
  study.springboot.service.posts.PostsService
+study/springboot/domain/user/UserRepository.java
+ study.springboot.domain.user.UserRepository
+study/springboot/domain/posts/Posts.java
+ study.springboot.domain.posts.Posts
+ study.springboot.domain.posts.Posts$PostsBuilder
+study/springboot/web/HelloController.java
+ study.springboot.web.HelloController
+study/springboot/domain/posts/PostsRepository.java
+ study.springboot.domain.posts.PostsRepository
+study/springboot/config/auth/SecurityConfig.java
+ study.springboot.config.auth.SecurityConfig
+study/springboot/web/dto/HelloResponseDto.java
+ study.springboot.web.dto.HelloResponseDto
+study/springboot/config/auth/dto/OAuthAttributes.java
+ study.springboot.config.auth.dto.OAuthAttributes
+ study.springboot.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
+study/springboot/web/PostsApiController.java
+ study.springboot.web.PostsApiController
+study/springboot/domain/user/Role.java
+ study.springboot.domain.user.Role
+study/springboot/config/auth/CustomOAuth2UserService.java
+ study.springboot.config.auth.CustomOAuth2UserService
+study/springboot/web/IndexController.java
+ study.springboot.web.IndexController

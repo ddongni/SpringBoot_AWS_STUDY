@@ -5,8 +5,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import study.springboot.config.auth.dto.SessionUser;
 import study.springboot.service.posts.PostsService;
 import study.springboot.web.dto.PostsResponseDto;
+
+import javax.servlet.http.HttpSession;
 
 /*
  머스테치 스타터 덕분에 컨트롤러에서 문자열을 반환할 때
@@ -19,7 +22,7 @@ import study.springboot.web.dto.PostsResponseDto;
 public class IndexController {
 
     private final PostsService postsService;
-
+    private final HttpSession httpSession;
     /*
      Model
         서버 템플릿 엔진에서 사용할 수 있는 객체 저장
@@ -28,6 +31,11 @@ public class IndexController {
     @GetMapping("/")
     public String index(Model model){
         model.addAttribute("posts",postsService.findAllDesc());
+        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+        System.out.println(user);
+        if(user!=null){
+            model.addAttribute("userName", user.getName());
+        }
         return "index";
     }
 
