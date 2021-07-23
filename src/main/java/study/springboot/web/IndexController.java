@@ -1,10 +1,12 @@
 package study.springboot.web;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import study.springboot.config.auth.LoginUser;
 import study.springboot.config.auth.dto.SessionUser;
 import study.springboot.service.posts.PostsService;
 import study.springboot.web.dto.PostsResponseDto;
@@ -29,10 +31,8 @@ public class IndexController {
         여기서는 postsService.findAllDesc()로 가져온 결과를 posts로 index.musatche에 전달
      */
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model , @LoginUser SessionUser user){
         model.addAttribute("posts",postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
-        System.out.println(user);
         if(user!=null){
             model.addAttribute("userName", user.getName());
         }

@@ -43,3 +43,9 @@ study/springboot/config/auth/CustomOAuth2UserService.java
  study.springboot.config.auth.CustomOAuth2UserService
 study/springboot/web/IndexController.java
  study.springboot.web.IndexController
+study/springboot/config/WebConfig.java
+ study.springboot.config.WebConfig
+study/springboot/config/auth/LoginUserArgumentResolver.java
+ study.springboot.config.auth.LoginUserArgumentResolver
+study/springboot/config/auth/LoginUser.java
+ study.springboot.config.auth.LoginUser
