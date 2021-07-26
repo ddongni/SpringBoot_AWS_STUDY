@@ -10,8 +10,9 @@ study/springboot/config/auth/dto/SessionUser.java
  study.springboot.config.auth.dto.SessionUser
 study/springboot/web/dto/PostsResponseDto.java
  study.springboot.web.dto.PostsResponseDto
-study/springboot/config/auth/CustomOAuth2UserService.java
- study.springboot.config.auth.CustomOAuth2UserService
+study/springboot/domain/posts/Posts.java
+ study.springboot.domain.posts.Posts
+ study.springboot.domain.posts.Posts$PostsBuilder
 study/springboot/domain/BaseTimeEntity.java
  study.springboot.domain.BaseTimeEntity
 study/springboot/Application.java
@@ -29,23 +30,22 @@ study/springboot/web/HelloController.java
  study.springboot.web.HelloController
 study/springboot/domain/posts/PostsRepository.java
  study.springboot.domain.posts.PostsRepository
-study/springboot/config/auth/SecurityConfig.java
- study.springboot.config.auth.SecurityConfig
+study/springboot/web/dto/PostsUpdateRequestDto.java
+ study.springboot.web.dto.PostsUpdateRequestDto
+ study.springboot.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
 study/springboot/web/dto/HelloResponseDto.java
  study.springboot.web.dto.HelloResponseDto
-study/springboot/web/IndexController.java
- study.springboot.web.IndexController
+study/springboot/config/auth/LoginUserArgumentResolver.java
+ study.springboot.config.auth.LoginUserArgumentResolver
 study/springboot/config/WebConfig.java
  study.springboot.config.WebConfig
 study/springboot/web/PostsApiController.java
  study.springboot.web.PostsApiController
 study/springboot/domain/user/Role.java
  study.springboot.domain.user.Role
-study/springboot/config/auth/LoginUserArgumentResolver.java
- study.springboot.config.auth.LoginUserArgumentResolver
-study/springboot/domain/posts/Posts.java
- study.springboot.domain.posts.Posts
- study.springboot.domain.posts.Posts$PostsBuilder
-study/springboot/web/dto/PostsUpdateRequestDto.java
- study.springboot.web.dto.PostsUpdateRequestDto
- study.springboot.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
+study/springboot/config/auth/SecurityConfig.java
+ study.springboot.config.auth.SecurityConfig
+study/springboot/config/auth/CustomOAuth2UserService.java
+ study.springboot.config.auth.CustomOAuth2UserService
+study/springboot/web/IndexController.java
+ study.springboot.web.IndexController
