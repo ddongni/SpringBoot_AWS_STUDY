@@ -15,8 +15,8 @@ study/springboot/domain/posts/Posts.java
  study.springboot.domain.posts.Posts$PostsBuilder
 study/springboot/domain/BaseTimeEntity.java
  study.springboot.domain.BaseTimeEntity
-study/springboot/Application.java
- study.springboot.Application
+study/springboot/web/IndexController.java
+ study.springboot.web.IndexController
 study/springboot/service/posts/PostsService.java
  study.springboot.service.posts.PostsService
 study/springboot/config/auth/LoginUser.java
@@ -47,5 +47,7 @@ study/springboot/config/auth/SecurityConfig.java
  study.springboot.config.auth.SecurityConfig
 study/springboot/config/auth/CustomOAuth2UserService.java
  study.springboot.config.auth.CustomOAuth2UserService
-study/springboot/web/IndexController.java
- study.springboot.web.IndexController
+study/springboot/config/JpaConfig.java
+ study.springboot.config.JpaConfig
+study/springboot/Application.java
+ study.springboot.Application

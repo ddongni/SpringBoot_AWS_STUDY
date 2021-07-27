@@ -1,11 +1,17 @@
 package study.springboot.web;
 
+import lombok.With;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.FilterType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
+import study.springboot.config.auth.SecurityConfig;
+
 import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -20,7 +26,10 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
     @Controller, @ControllerAdvice 등을 사용할 수 있음
  */
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(controllers = HelloController.class)
+@WebMvcTest(controllers = HelloController.class,
+    excludeFilters = {
+        @ComponentScan.Filter(type = FilterType.ASSIGNABLE_TYPE,classes = SecurityConfig.class)
+    })
 public class HelloControllerTest {
 
     /* 웹 API 테스트 시 사용
@@ -30,6 +39,7 @@ public class HelloControllerTest {
     private MockMvc mvc;
 
     //테스트 메소드 선언
+    @WithMockUser(roles = "USER")
     @Test
     public void returnHello() throws Exception{
         String hello = "hello";
@@ -45,6 +55,7 @@ public class HelloControllerTest {
                 .andExpect(content().string(hello));
     }
 
+    @WithMockUser(roles = "USER")
     @Test
     public void returnHelloDto() throws Exception{
         String name = "hello";
